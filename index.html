@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>DEAD : THE HALLOWEEN MASSACRE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="gameContainer">
+    <!-- Retro CRT & Pixel Canvas -->
+    <canvas id="gameCanvas" width="384" height="216"></canvas>
+
+    <!-- CRT Scanline overlay effect -->
+    <div class="crt-overlay"></div>
+
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="overlay-panel">
+      <div class="brand-title">DEAD : THE HALLOWEEN MASSACRE</div>
+      <div class="loading-box">
+        <div id="loadingProgress" class="loading-bar"></div>
+      </div>
+      <div id="loadingText" class="loading-text">Caricamento asset Amiga AGA...</div>
+    </div>
+
+    <!-- Main Menu -->
+    <div id="mainMenu" class="overlay-panel" style="display: none;">
+      <h1 class="brand-title glow">DEAD : THE HALLOWEEN MASSACRE</h1>
+      <p class="tagline">Gothic 2.5D FPS Horror &bull; Amiga 1200 AGA Style</p>
+      
+      <div class="menu-buttons">
+        <button id="btnStart" class="retro-btn">INIZIA IL MASSACRO</button>
+        <button id="btnLevelSelect" class="retro-btn">SELEZIONA LIVELLO</button>
+        <button id="btnOpenEditor" class="retro-btn" style="border-color: #ffaa00; color: #ffcc44;">ISPEZIONA & MODIFICA MAPPA [TAB]</button>
+      </div>
+
+      <div class="instructions">
+        <p><strong>Comandi Desktop:</strong> WASD = Muoviti | Mouse = Mira | Clic SX = Attacca | E = Interagisci | Shift = Corsa | 1-5 = Armi | <strong>G = Immortalità (God Mode)</strong> | <strong>TAB / M = Editor Mappa</strong></p>
+      </div>
+    </div>
+
+    <!-- Mobile Touch Controls (§13) -->
+    <div id="mobileControls" class="mobile-ui">
+      <div id="virtualJoystick" class="touch-stick">
+        <div class="stick-knob"></div>
+      </div>
+      <div class="touch-actions">
+        <button id="touchAttack" class="touch-btn atk-btn">ATK</button>
+        <button id="touchInteract" class="touch-btn use-btn">USE</button>
+        <button id="touchWeapon" class="touch-btn wpn-btn">WPN</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Entry Script -->
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

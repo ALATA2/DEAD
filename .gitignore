@@ -1,0 +1,9 @@
+﻿# Ignore archives and temporary files
+*.zip
+*.tmp
+*.log
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+node_modules/

@@ -1,0 +1,1291 @@
+{
+  "pack": "DEAD O'CLOCK Environment Art Pack",
+  "version": 1,
+  "progression": [
+    "forest",
+    "cemetery",
+    "crypt",
+    "catacombs"
+  ],
+  "style": "Amiga 1200 AGA-inspired flat-color pixel art; gothic Halloween horror",
+  "textures": {
+    "forest": [
+      {
+        "name": "dead_leaf_floor",
+        "native": "textures/forest/native/01_dead_leaf_floor.png",
+        "game": "textures/forest/128x128/01_dead_leaf_floor.png"
+      },
+      {
+        "name": "muddy_path",
+        "native": "textures/forest/native/02_muddy_path.png",
+        "game": "textures/forest/128x128/02_muddy_path.png"
+      },
+      {
+        "name": "tangled_roots",
+        "native": "textures/forest/native/03_tangled_roots.png",
+        "game": "textures/forest/128x128/03_tangled_roots.png"
+      },
+      {
+        "name": "cracked_earth",
+        "native": "textures/forest/native/04_cracked_earth.png",
+        "game": "textures/forest/128x128/04_cracked_earth.png"
+      },
+      {
+        "name": "ancient_bark",
+        "native": "textures/forest/native/05_ancient_bark.png",
+        "game": "textures/forest/128x128/05_ancient_bark.png"
+      },
+      {
+        "name": "clawed_bark",
+        "native": "textures/forest/native/06_clawed_bark.png",
+        "game": "textures/forest/128x128/06_clawed_bark.png"
+      },
+      {
+        "name": "thorn_bramble",
+        "native": "textures/forest/native/07_thorn_bramble.png",
+        "game": "textures/forest/128x128/07_thorn_bramble.png"
+      },
+      {
+        "name": "mossy_cliff",
+        "native": "textures/forest/native/08_mossy_cliff.png",
+        "game": "textures/forest/128x128/08_mossy_cliff.png"
+      },
+      {
+        "name": "rotten_planks",
+        "native": "textures/forest/native/09_rotten_planks.png",
+        "game": "textures/forest/128x128/09_rotten_planks.png"
+      },
+      {
+        "name": "hollow_tree",
+        "native": "textures/forest/native/10_hollow_tree.png",
+        "game": "textures/forest/128x128/10_hollow_tree.png"
+      },
+      {
+        "name": "wet_mossy_stone",
+        "native": "textures/forest/native/11_wet_mossy_stone.png",
+        "game": "textures/forest/128x128/11_wet_mossy_stone.png"
+      },
+      {
+        "name": "black_cave_rock",
+        "native": "textures/forest/native/12_black_cave_rock.png",
+        "game": "textures/forest/128x128/12_black_cave_rock.png"
+      },
+      {
+        "name": "stagnant_swamp",
+        "native": "textures/forest/native/13_stagnant_swamp.png",
+        "game": "textures/forest/128x128/13_stagnant_swamp.png"
+      },
+      {
+        "name": "purple_fog",
+        "native": "textures/forest/native/14_purple_fog.png",
+        "game": "textures/forest/128x128/14_purple_fog.png"
+      },
+      {
+        "name": "blood_trail",
+        "native": "textures/forest/native/15_blood_trail.png",
+        "game": "textures/forest/128x128/15_blood_trail.png"
+      },
+      {
+        "name": "moonlit_canopy",
+        "native": "textures/forest/native/16_moonlit_canopy.png",
+        "game": "textures/forest/128x128/16_moonlit_canopy.png"
+      }
+    ],
+    "cemetery": [
+      {
+        "name": "uneven_cobblestones",
+        "native": "textures/cemetery/native/01_uneven_cobblestones.png",
+        "game": "textures/cemetery/128x128/01_uneven_cobblestones.png"
+      },
+      {
+        "name": "cracked_flagstones",
+        "native": "textures/cemetery/native/02_cracked_flagstones.png",
+        "game": "textures/cemetery/128x128/02_cracked_flagstones.png"
+      },
+      {
+        "name": "fresh_grave_soil",
+        "native": "textures/cemetery/native/03_fresh_grave_soil.png",
+        "game": "textures/cemetery/128x128/03_fresh_grave_soil.png"
+      },
+      {
+        "name": "dead_grass",
+        "native": "textures/cemetery/native/04_dead_grass.png",
+        "game": "textures/cemetery/128x128/04_dead_grass.png"
+      },
+      {
+        "name": "mossy_gray_bricks",
+        "native": "textures/cemetery/native/05_mossy_gray_bricks.png",
+        "game": "textures/cemetery/128x128/05_mossy_gray_bricks.png"
+      },
+      {
+        "name": "purple_mausoleum_stone",
+        "native": "textures/cemetery/native/06_purple_mausoleum_stone.png",
+        "game": "textures/cemetery/128x128/06_purple_mausoleum_stone.png"
+      },
+      {
+        "name": "skull_relief",
+        "native": "textures/cemetery/native/07_skull_relief.png",
+        "game": "textures/cemetery/128x128/07_skull_relief.png"
+      },
+      {
+        "name": "damp_foundation",
+        "native": "textures/cemetery/native/08_damp_foundation.png",
+        "game": "textures/cemetery/128x128/08_damp_foundation.png"
+      },
+      {
+        "name": "iron_bars",
+        "native": "textures/cemetery/native/09_iron_bars.png",
+        "game": "textures/cemetery/128x128/09_iron_bars.png"
+      },
+      {
+        "name": "aged_oak_gate",
+        "native": "textures/cemetery/native/10_aged_oak_gate.png",
+        "game": "textures/cemetery/128x128/10_aged_oak_gate.png"
+      },
+      {
+        "name": "corroded_bronze_door",
+        "native": "textures/cemetery/native/11_corroded_bronze_door.png",
+        "game": "textures/cemetery/128x128/11_corroded_bronze_door.png"
+      },
+      {
+        "name": "boarded_entrance",
+        "native": "textures/cemetery/native/12_boarded_entrance.png",
+        "game": "textures/cemetery/128x128/12_boarded_entrance.png"
+      },
+      {
+        "name": "gothic_stained_glass",
+        "native": "textures/cemetery/native/13_gothic_stained_glass.png",
+        "game": "textures/cemetery/128x128/13_gothic_stained_glass.png"
+      },
+      {
+        "name": "memorial_plaques",
+        "native": "textures/cemetery/native/14_memorial_plaques.png",
+        "game": "textures/cemetery/128x128/14_memorial_plaques.png"
+      },
+      {
+        "name": "green_flame_stone",
+        "native": "textures/cemetery/native/15_green_flame_stone.png",
+        "game": "textures/cemetery/128x128/15_green_flame_stone.png"
+      },
+      {
+        "name": "moonlit_storm_sky",
+        "native": "textures/cemetery/native/16_moonlit_storm_sky.png",
+        "game": "textures/cemetery/128x128/16_moonlit_storm_sky.png"
+      }
+    ],
+    "crypt": [
+      {
+        "name": "worn_floor_slabs",
+        "native": "textures/crypt/native/01_worn_floor_slabs.png",
+        "game": "textures/crypt/128x128/01_worn_floor_slabs.png"
+      },
+      {
+        "name": "ceremonial_floor",
+        "native": "textures/crypt/native/02_ceremonial_floor.png",
+        "game": "textures/crypt/128x128/02_ceremonial_floor.png"
+      },
+      {
+        "name": "dusty_flagstones",
+        "native": "textures/crypt/native/03_dusty_flagstones.png",
+        "game": "textures/crypt/128x128/03_dusty_flagstones.png"
+      },
+      {
+        "name": "slime_floor",
+        "native": "textures/crypt/native/04_slime_floor.png",
+        "game": "textures/crypt/128x128/04_slime_floor.png"
+      },
+      {
+        "name": "carved_limestone",
+        "native": "textures/crypt/native/05_carved_limestone.png",
+        "game": "textures/crypt/128x128/05_carved_limestone.png"
+      },
+      {
+        "name": "arched_recesses",
+        "native": "textures/crypt/native/06_arched_recesses.png",
+        "game": "textures/crypt/128x128/06_arched_recesses.png"
+      },
+      {
+        "name": "skull_niches",
+        "native": "textures/crypt/native/07_skull_niches.png",
+        "game": "textures/crypt/128x128/07_skull_niches.png"
+      },
+      {
+        "name": "occult_rune_wall",
+        "native": "textures/crypt/native/08_occult_rune_wall.png",
+        "game": "textures/crypt/128x128/08_occult_rune_wall.png"
+      },
+      {
+        "name": "iron_crypt_door",
+        "native": "textures/crypt/native/09_iron_crypt_door.png",
+        "game": "textures/crypt/128x128/09_iron_crypt_door.png"
+      },
+      {
+        "name": "sarcophagus_lid",
+        "native": "textures/crypt/native/10_sarcophagus_lid.png",
+        "game": "textures/crypt/128x128/10_sarcophagus_lid.png"
+      },
+      {
+        "name": "funeral_drapery",
+        "native": "textures/crypt/native/11_funeral_drapery.png",
+        "game": "textures/crypt/128x128/11_funeral_drapery.png"
+      },
+      {
+        "name": "brass_machinery",
+        "native": "textures/crypt/native/12_brass_machinery.png",
+        "game": "textures/crypt/128x128/12_brass_machinery.png"
+      },
+      {
+        "name": "candle_wax_wall",
+        "native": "textures/crypt/native/13_candle_wax_wall.png",
+        "game": "textures/crypt/128x128/13_candle_wax_wall.png"
+      },
+      {
+        "name": "demonic_altar_relief",
+        "native": "textures/crypt/native/14_demonic_altar_relief.png",
+        "game": "textures/crypt/128x128/14_demonic_altar_relief.png"
+      },
+      {
+        "name": "ribbed_stone_ceiling",
+        "native": "textures/crypt/native/15_ribbed_stone_ceiling.png",
+        "game": "textures/crypt/128x128/15_ribbed_stone_ceiling.png"
+      },
+      {
+        "name": "green_ritual_portal",
+        "native": "textures/crypt/native/16_green_ritual_portal.png",
+        "game": "textures/crypt/128x128/16_green_ritual_portal.png"
+      }
+    ],
+    "catacombs": [
+      {
+        "name": "damp_bricks",
+        "native": "textures/catacombs/native/01_damp_bricks.png",
+        "game": "textures/catacombs/128x128/01_damp_bricks.png"
+      },
+      {
+        "name": "earth_tunnel",
+        "native": "textures/catacombs/native/02_earth_tunnel.png",
+        "game": "textures/catacombs/128x128/02_earth_tunnel.png"
+      },
+      {
+        "name": "excavated_rock",
+        "native": "textures/catacombs/native/03_excavated_rock.png",
+        "game": "textures/catacombs/128x128/03_excavated_rock.png"
+      },
+      {
+        "name": "collapsed_rubble",
+        "native": "textures/catacombs/native/04_collapsed_rubble.png",
+        "game": "textures/catacombs/128x128/04_collapsed_rubble.png"
+      },
+      {
+        "name": "bone_wall",
+        "native": "textures/catacombs/native/05_bone_wall.png",
+        "game": "textures/catacombs/128x128/05_bone_wall.png"
+      },
+      {
+        "name": "skull_ossuary",
+        "native": "textures/catacombs/native/06_skull_ossuary.png",
+        "game": "textures/catacombs/128x128/06_skull_ossuary.png"
+      },
+      {
+        "name": "root_broken_stone",
+        "native": "textures/catacombs/native/07_root_broken_stone.png",
+        "game": "textures/catacombs/128x128/07_root_broken_stone.png"
+      },
+      {
+        "name": "pale_fungus_wall",
+        "native": "textures/catacombs/native/08_pale_fungus_wall.png",
+        "game": "textures/catacombs/128x128/08_pale_fungus_wall.png"
+      },
+      {
+        "name": "rusted_bars",
+        "native": "textures/catacombs/native/09_rusted_bars.png",
+        "game": "textures/catacombs/128x128/09_rusted_bars.png"
+      },
+      {
+        "name": "sewer_grate",
+        "native": "textures/catacombs/native/10_sewer_grate.png",
+        "game": "textures/catacombs/128x128/10_sewer_grate.png"
+      },
+      {
+        "name": "chained_door",
+        "native": "textures/catacombs/native/11_chained_door.png",
+        "game": "textures/catacombs/128x128/11_chained_door.png"
+      },
+      {
+        "name": "broken_timber_support",
+        "native": "textures/catacombs/native/12_broken_timber_support.png",
+        "game": "textures/catacombs/128x128/12_broken_timber_support.png"
+      },
+      {
+        "name": "black_water",
+        "native": "textures/catacombs/native/13_black_water.png",
+        "game": "textures/catacombs/128x128/13_black_water.png"
+      },
+      {
+        "name": "blood_channel",
+        "native": "textures/catacombs/native/14_blood_channel.png",
+        "game": "textures/catacombs/128x128/14_blood_channel.png"
+      },
+      {
+        "name": "root_cobweb_ceiling",
+        "native": "textures/catacombs/native/15_root_cobweb_ceiling.png",
+        "game": "textures/catacombs/128x128/15_root_cobweb_ceiling.png"
+      },
+      {
+        "name": "purple_void_rune",
+        "native": "textures/catacombs/native/16_purple_void_rune.png",
+        "game": "textures/catacombs/128x128/16_purple_void_rune.png"
+      }
+    ]
+  },
+  "props": {
+    "forest": [
+      {
+        "name": "twisted_dead_tree",
+        "file": "props/forest/01_twisted_dead_tree.png",
+        "size": [
+          281,
+          359
+        ]
+      },
+      {
+        "name": "forked_dead_tree",
+        "file": "props/forest/02_forked_dead_tree.png",
+        "size": [
+          263,
+          344
+        ]
+      },
+      {
+        "name": "rotten_stump",
+        "file": "props/forest/03_rotten_stump.png",
+        "size": [
+          253,
+          247
+        ]
+      },
+      {
+        "name": "fallen_hollow_log",
+        "file": "props/forest/04_fallen_hollow_log.png",
+        "size": [
+          289,
+          177
+        ]
+      },
+      {
+        "name": "root_barrier",
+        "file": "props/forest/05_root_barrier.png",
+        "size": [
+          281,
+          219
+        ]
+      },
+      {
+        "name": "thorn_bush",
+        "file": "props/forest/06_thorn_bush.png",
+        "size": [
+          274,
+          208
+        ]
+      },
+      {
+        "name": "mossy_boulder",
+        "file": "props/forest/07_mossy_boulder.png",
+        "size": [
+          247,
+          197
+        ]
+      },
+      {
+        "name": "rock_cluster",
+        "file": "props/forest/08_rock_cluster.png",
+        "size": [
+          235,
+          136
+        ]
+      },
+      {
+        "name": "poisonous_mushrooms",
+        "file": "props/forest/09_poisonous_mushrooms.png",
+        "size": [
+          227,
+          189
+        ]
+      },
+      {
+        "name": "wolfsbane_flowers",
+        "file": "props/forest/10_wolfsbane_flowers.png",
+        "size": [
+          217,
+          234
+        ]
+      },
+      {
+        "name": "hanging_green_lantern",
+        "file": "props/forest/11_hanging_green_lantern.png",
+        "size": [
+          202,
+          248
+        ]
+      },
+      {
+        "name": "direction_sign",
+        "file": "props/forest/12_direction_sign.png",
+        "size": [
+          176,
+          242
+        ]
+      },
+      {
+        "name": "broken_handcart",
+        "file": "props/forest/13_broken_handcart.png",
+        "size": [
+          289,
+          189
+        ]
+      },
+      {
+        "name": "wolf_trap",
+        "file": "props/forest/14_wolf_trap.png",
+        "size": [
+          267,
+          134
+        ]
+      },
+      {
+        "name": "werewolf_footprints",
+        "file": "props/forest/15_werewolf_footprints.png",
+        "size": [
+          224,
+          238
+        ]
+      },
+      {
+        "name": "ground_fog",
+        "file": "props/forest/16_ground_fog.png",
+        "size": [
+          217,
+          133
+        ]
+      },
+      {
+        "name": "green_flame_brazier",
+        "file": "props/forest/17_green_flame_brazier.png",
+        "size": [
+          209,
+          249
+        ]
+      },
+      {
+        "name": "crow_branch",
+        "file": "props/forest/18_crow_branch.png",
+        "size": [
+          199,
+          219
+        ]
+      },
+      {
+        "name": "animal_bones",
+        "file": "props/forest/19_animal_bones.png",
+        "size": [
+          275,
+          247
+        ]
+      },
+      {
+        "name": "root_exit_arch",
+        "file": "props/forest/20_root_exit_arch.png",
+        "size": [
+          301,
+          254
+        ]
+      }
+    ],
+    "cemetery": [
+      {
+        "name": "weathered_headstone",
+        "file": "props/cemetery/01_weathered_headstone.png",
+        "size": [
+          179,
+          175
+        ]
+      },
+      {
+        "name": "ornate_cracked_headstone",
+        "file": "props/cemetery/02_ornate_cracked_headstone.png",
+        "size": [
+          186,
+          243
+        ]
+      },
+      {
+        "name": "gothic_cross",
+        "file": "props/cemetery/03_gothic_cross.png",
+        "size": [
+          168,
+          265
+        ]
+      },
+      {
+        "name": "funerary_obelisk",
+        "file": "props/cemetery/04_funerary_obelisk.png",
+        "size": [
+          170,
+          281
+        ]
+      },
+      {
+        "name": "mourning_angel",
+        "file": "props/cemetery/05_mourning_angel.png",
+        "size": [
+          202,
+          244
+        ]
+      },
+      {
+        "name": "gargoyle_pedestal",
+        "file": "props/cemetery/06_gargoyle_pedestal.png",
+        "size": [
+          206,
+          255
+        ]
+      },
+      {
+        "name": "iron_fence_straight",
+        "file": "props/cemetery/07_iron_fence_straight.png",
+        "size": [
+          232,
+          179
+        ]
+      },
+      {
+        "name": "iron_fence_corner",
+        "file": "props/cemetery/08_iron_fence_corner.png",
+        "size": [
+          193,
+          195
+        ]
+      },
+      {
+        "name": "cemetery_gate_closed",
+        "file": "props/cemetery/09_cemetery_gate_closed.png",
+        "size": [
+          316,
+          239
+        ]
+      },
+      {
+        "name": "cemetery_gate_open",
+        "file": "props/cemetery/10_cemetery_gate_open.png",
+        "size": [
+          260,
+          225
+        ]
+      },
+      {
+        "name": "mausoleum_facade",
+        "file": "props/cemetery/11_mausoleum_facade.png",
+        "size": [
+          247,
+          262
+        ]
+      },
+      {
+        "name": "open_grave",
+        "file": "props/cemetery/12_open_grave.png",
+        "size": [
+          301,
+          205
+        ]
+      },
+      {
+        "name": "coffin_closed",
+        "file": "props/cemetery/13_coffin_closed.png",
+        "size": [
+          236,
+          188
+        ]
+      },
+      {
+        "name": "coffin_open",
+        "file": "props/cemetery/14_coffin_open.png",
+        "size": [
+          222,
+          184
+        ]
+      },
+      {
+        "name": "jack_o_lantern",
+        "file": "props/cemetery/15_jack_o_lantern.png",
+        "size": [
+          229,
+          165
+        ]
+      },
+      {
+        "name": "green_flame_lantern_post",
+        "file": "props/cemetery/16_green_flame_lantern_post.png",
+        "size": [
+          92,
+          264
+        ]
+      },
+      {
+        "name": "funeral_candles",
+        "file": "props/cemetery/17_funeral_candles.png",
+        "size": [
+          207,
+          188
+        ]
+      },
+      {
+        "name": "dead_yew_tree",
+        "file": "props/cemetery/18_dead_yew_tree.png",
+        "size": [
+          234,
+          263
+        ]
+      },
+      {
+        "name": "crow_on_skull",
+        "file": "props/cemetery/19_crow_on_skull.png",
+        "size": [
+          199,
+          189
+        ]
+      },
+      {
+        "name": "crypt_stair_entrance",
+        "file": "props/cemetery/20_crypt_stair_entrance.png",
+        "size": [
+          312,
+          235
+        ]
+      }
+    ],
+    "crypt": [
+      {
+        "name": "gothic_stone_arch",
+        "file": "props/crypt/01_gothic_stone_arch.png",
+        "size": [
+          224,
+          298
+        ]
+      },
+      {
+        "name": "carved_column",
+        "file": "props/crypt/02_carved_column.png",
+        "size": [
+          132,
+          298
+        ]
+      },
+      {
+        "name": "broken_column",
+        "file": "props/crypt/03_broken_column.png",
+        "size": [
+          191,
+          281
+        ]
+      },
+      {
+        "name": "sarcophagus_closed",
+        "file": "props/crypt/04_sarcophagus_closed.png",
+        "size": [
+          315,
+          185
+        ]
+      },
+      {
+        "name": "sarcophagus_open",
+        "file": "props/crypt/05_sarcophagus_open.png",
+        "size": [
+          240,
+          195
+        ]
+      },
+      {
+        "name": "occult_altar",
+        "file": "props/crypt/06_occult_altar.png",
+        "size": [
+          296,
+          207
+        ]
+      },
+      {
+        "name": "funerary_table",
+        "file": "props/crypt/07_funerary_table.png",
+        "size": [
+          297,
+          164
+        ]
+      },
+      {
+        "name": "five_candle_candelabrum",
+        "file": "props/crypt/08_five_candle_candelabrum.png",
+        "size": [
+          141,
+          262
+        ]
+      },
+      {
+        "name": "orange_flame_brazier",
+        "file": "props/crypt/09_orange_flame_brazier.png",
+        "size": [
+          155,
+          258
+        ]
+      },
+      {
+        "name": "skull_pile",
+        "file": "props/crypt/10_skull_pile.png",
+        "size": [
+          293,
+          176
+        ]
+      },
+      {
+        "name": "scattered_bones",
+        "file": "props/crypt/11_scattered_bones.png",
+        "size": [
+          293,
+          154
+        ]
+      },
+      {
+        "name": "hanging_chains",
+        "file": "props/crypt/12_hanging_chains.png",
+        "size": [
+          218,
+          229
+        ]
+      },
+      {
+        "name": "funeral_banner",
+        "file": "props/crypt/13_funeral_banner.png",
+        "size": [
+          193,
+          234
+        ]
+      },
+      {
+        "name": "lever",
+        "file": "props/crypt/14_lever.png",
+        "size": [
+          158,
+          219
+        ]
+      },
+      {
+        "name": "pressure_plate",
+        "file": "props/crypt/15_pressure_plate.png",
+        "size": [
+          225,
+          185
+        ]
+      },
+      {
+        "name": "iron_crypt_door",
+        "file": "props/crypt/16_iron_crypt_door.png",
+        "size": [
+          242,
+          277
+        ]
+      },
+      {
+        "name": "carved_stone_door",
+        "file": "props/crypt/17_carved_stone_door.png",
+        "size": [
+          228,
+          278
+        ]
+      },
+      {
+        "name": "green_crystal_pedestal",
+        "file": "props/crypt/18_green_crystal_pedestal.png",
+        "size": [
+          153,
+          275
+        ]
+      },
+      {
+        "name": "green_summoning_portal",
+        "file": "props/crypt/19_green_summoning_portal.png",
+        "size": [
+          247,
+          277
+        ]
+      },
+      {
+        "name": "catacomb_stairway",
+        "file": "props/crypt/20_catacomb_stairway.png",
+        "size": [
+          287,
+          241
+        ]
+      }
+    ],
+    "catacombs": [
+      {
+        "name": "long_bone_heap",
+        "file": "props/catacombs/01_long_bone_heap.png",
+        "size": [
+          279,
+          179
+        ]
+      },
+      {
+        "name": "skull_mound",
+        "file": "props/catacombs/02_skull_mound.png",
+        "size": [
+          279,
+          198
+        ]
+      },
+      {
+        "name": "bone_column",
+        "file": "props/catacombs/03_bone_column.png",
+        "size": [
+          131,
+          283
+        ]
+      },
+      {
+        "name": "skeleton_niche",
+        "file": "props/catacombs/04_skeleton_niche.png",
+        "size": [
+          260,
+          281
+        ]
+      },
+      {
+        "name": "hanging_cage",
+        "file": "props/catacombs/05_hanging_cage.png",
+        "size": [
+          126,
+          302
+        ]
+      },
+      {
+        "name": "dungeon_gate",
+        "file": "props/catacombs/06_dungeon_gate.png",
+        "size": [
+          287,
+          269
+        ]
+      },
+      {
+        "name": "circular_sewer_grate",
+        "file": "props/catacombs/07_circular_sewer_grate.png",
+        "size": [
+          235,
+          245
+        ]
+      },
+      {
+        "name": "wooden_ladder",
+        "file": "props/catacombs/08_wooden_ladder.png",
+        "size": [
+          133,
+          270
+        ]
+      },
+      {
+        "name": "broken_stone_bridge",
+        "file": "props/catacombs/09_broken_stone_bridge.png",
+        "size": [
+          319,
+          262
+        ]
+      },
+      {
+        "name": "timber_tunnel_support",
+        "file": "props/catacombs/10_timber_tunnel_support.png",
+        "size": [
+          274,
+          281
+        ]
+      },
+      {
+        "name": "rubble_pile",
+        "file": "props/catacombs/11_rubble_pile.png",
+        "size": [
+          311,
+          198
+        ]
+      },
+      {
+        "name": "bone_mine_cart",
+        "file": "props/catacombs/12_bone_mine_cart.png",
+        "size": [
+          264,
+          199
+        ]
+      },
+      {
+        "name": "hook_and_chain",
+        "file": "props/catacombs/13_hook_and_chain.png",
+        "size": [
+          86,
+          244
+        ]
+      },
+      {
+        "name": "glowing_fungus",
+        "file": "props/catacombs/14_glowing_fungus.png",
+        "size": [
+          226,
+          220
+        ]
+      },
+      {
+        "name": "black_water_puddle",
+        "file": "props/catacombs/15_black_water_puddle.png",
+        "size": [
+          319,
+          171
+        ]
+      },
+      {
+        "name": "blood_drain_channel",
+        "file": "props/catacombs/16_blood_drain_channel.png",
+        "size": [
+          279,
+          239
+        ]
+      },
+      {
+        "name": "wall_torch",
+        "file": "props/catacombs/17_wall_torch.png",
+        "size": [
+          155,
+          262
+        ]
+      },
+      {
+        "name": "purple_rune_stone",
+        "file": "props/catacombs/18_purple_rune_stone.png",
+        "size": [
+          251,
+          275
+        ]
+      },
+      {
+        "name": "collapsed_archway",
+        "file": "props/catacombs/19_collapsed_archway.png",
+        "size": [
+          275,
+          264
+        ]
+      },
+      {
+        "name": "chained_ossuary_gate",
+        "file": "props/catacombs/20_chained_ossuary_gate.png",
+        "size": [
+          354,
+          273
+        ]
+      }
+    ]
+  },
+  "pickups": [
+    {
+      "name": "health_vial",
+      "file": "pickups/01_health_vial.png",
+      "size": [
+        126,
+        198
+      ]
+    },
+    {
+      "name": "medical_satchel",
+      "file": "pickups/02_medical_satchel.png",
+      "size": [
+        257,
+        194
+      ]
+    },
+    {
+      "name": "heart_crystal",
+      "file": "pickups/03_heart_crystal.png",
+      "size": [
+        242,
+        263
+      ]
+    },
+    {
+      "name": "armor_shard",
+      "file": "pickups/04_armor_shard.png",
+      "size": [
+        171,
+        233
+      ]
+    },
+    {
+      "name": "full_armor",
+      "file": "pickups/05_full_armor.png",
+      "size": [
+        281,
+        312
+      ]
+    },
+    {
+      "name": "ammo_clip",
+      "file": "pickups/06_ammo_clip.png",
+      "size": [
+        142,
+        227
+      ]
+    },
+    {
+      "name": "bullet_box",
+      "file": "pickups/07_bullet_box.png",
+      "size": [
+        244,
+        237
+      ]
+    },
+    {
+      "name": "shotgun_shells",
+      "file": "pickups/08_shotgun_shells.png",
+      "size": [
+        199,
+        196
+      ]
+    },
+    {
+      "name": "rockets",
+      "file": "pickups/09_rockets.png",
+      "size": [
+        182,
+        250
+      ]
+    },
+    {
+      "name": "occult_energy_cell",
+      "file": "pickups/10_occult_energy_cell.png",
+      "size": [
+        159,
+        259
+      ]
+    },
+    {
+      "name": "pistol",
+      "file": "pickups/11_pistol.png",
+      "size": [
+        209,
+        176
+      ]
+    },
+    {
+      "name": "shotgun",
+      "file": "pickups/12_shotgun.png",
+      "size": [
+        302,
+        183
+      ]
+    },
+    {
+      "name": "double_barrel_shotgun",
+      "file": "pickups/13_double_barrel_shotgun.png",
+      "size": [
+        262,
+        150
+      ]
+    },
+    {
+      "name": "gothic_crossbow",
+      "file": "pickups/14_gothic_crossbow.png",
+      "size": [
+        315,
+        206
+      ]
+    },
+    {
+      "name": "woodsman_axe",
+      "file": "pickups/15_woodsman_axe.png",
+      "size": [
+        247,
+        218
+      ]
+    },
+    {
+      "name": "red_skull_key",
+      "file": "pickups/16_red_skull_key.png",
+      "size": [
+        112,
+        258
+      ]
+    },
+    {
+      "name": "blue_raven_key",
+      "file": "pickups/17_blue_raven_key.png",
+      "size": [
+        146,
+        258
+      ]
+    },
+    {
+      "name": "orange_pumpkin_key",
+      "file": "pickups/18_orange_pumpkin_key.png",
+      "size": [
+        124,
+        258
+      ]
+    },
+    {
+      "name": "purple_clock_key",
+      "file": "pickups/19_purple_clock_key.png",
+      "size": [
+        147,
+        275
+      ]
+    },
+    {
+      "name": "exit_sigil",
+      "file": "pickups/20_exit_sigil.png",
+      "size": [
+        301,
+        281
+      ]
+    }
+  ],
+  "animations": {
+    "combat_fx": {
+      "stone_impact": [
+        "animations/combat_fx/stone_impact/frame_01.png",
+        "animations/combat_fx/stone_impact/frame_02.png",
+        "animations/combat_fx/stone_impact/frame_03.png",
+        "animations/combat_fx/stone_impact/frame_04.png",
+        "animations/combat_fx/stone_impact/frame_05.png"
+      ],
+      "explosion": [
+        "animations/combat_fx/explosion/frame_01.png",
+        "animations/combat_fx/explosion/frame_02.png",
+        "animations/combat_fx/explosion/frame_03.png",
+        "animations/combat_fx/explosion/frame_04.png",
+        "animations/combat_fx/explosion/frame_05.png"
+      ],
+      "green_magic_impact": [
+        "animations/combat_fx/green_magic_impact/frame_01.png",
+        "animations/combat_fx/green_magic_impact/frame_02.png",
+        "animations/combat_fx/green_magic_impact/frame_03.png",
+        "animations/combat_fx/green_magic_impact/frame_04.png",
+        "animations/combat_fx/green_magic_impact/frame_05.png"
+      ],
+      "blood_hit": [
+        "animations/combat_fx/blood_hit/frame_01.png",
+        "animations/combat_fx/blood_hit/frame_02.png",
+        "animations/combat_fx/blood_hit/frame_03.png",
+        "animations/combat_fx/blood_hit/frame_04.png",
+        "animations/combat_fx/blood_hit/frame_05.png"
+      ]
+    },
+    "doors": {
+      "forest_root_gate": [
+        "animations/doors/forest_root_gate/frame_01.png",
+        "animations/doors/forest_root_gate/frame_02.png",
+        "animations/doors/forest_root_gate/frame_03.png",
+        "animations/doors/forest_root_gate/frame_04.png",
+        "animations/doors/forest_root_gate/frame_05.png"
+      ],
+      "cemetery_iron_gate": [
+        "animations/doors/cemetery_iron_gate/frame_01.png",
+        "animations/doors/cemetery_iron_gate/frame_02.png",
+        "animations/doors/cemetery_iron_gate/frame_03.png",
+        "animations/doors/cemetery_iron_gate/frame_04.png",
+        "animations/doors/cemetery_iron_gate/frame_05.png"
+      ],
+      "crypt_vertical_door": [
+        "animations/doors/crypt_vertical_door/frame_01.png",
+        "animations/doors/crypt_vertical_door/frame_02.png",
+        "animations/doors/crypt_vertical_door/frame_03.png",
+        "animations/doors/crypt_vertical_door/frame_04.png",
+        "animations/doors/crypt_vertical_door/frame_05.png"
+      ],
+      "catacomb_ossuary_gate": [
+        "animations/doors/catacomb_ossuary_gate/frame_01.png",
+        "animations/doors/catacomb_ossuary_gate/frame_02.png",
+        "animations/doors/catacomb_ossuary_gate/frame_03.png",
+        "animations/doors/catacomb_ossuary_gate/frame_04.png",
+        "animations/doors/catacomb_ossuary_gate/frame_05.png"
+      ]
+    },
+    "ambient": {
+      "ground_fog": [
+        "animations/ambient/ground_fog/frame_01.png",
+        "animations/ambient/ground_fog/frame_02.png",
+        "animations/ambient/ground_fog/frame_03.png",
+        "animations/ambient/ground_fog/frame_04.png",
+        "animations/ambient/ground_fog/frame_05.png"
+      ],
+      "green_flame": [
+        "animations/ambient/green_flame/frame_01.png",
+        "animations/ambient/green_flame/frame_02.png",
+        "animations/ambient/green_flame/frame_03.png",
+        "animations/ambient/green_flame/frame_04.png",
+        "animations/ambient/green_flame/frame_05.png"
+      ],
+      "orange_flame": [
+        "animations/ambient/orange_flame/frame_01.png",
+        "animations/ambient/orange_flame/frame_02.png",
+        "animations/ambient/orange_flame/frame_03.png",
+        "animations/ambient/orange_flame/frame_04.png",
+        "animations/ambient/orange_flame/frame_05.png"
+      ],
+      "water_drop": [
+        "animations/ambient/water_drop/frame_01.png",
+        "animations/ambient/water_drop/frame_02.png",
+        "animations/ambient/water_drop/frame_03.png",
+        "animations/ambient/water_drop/frame_04.png",
+        "animations/ambient/water_drop/frame_05.png"
+      ]
+    }
+  },
+  "panoramas": [
+    {
+      "name": "forest",
+      "file": "panoramas/forest.png",
+      "size": [
+        2172,
+        177
+      ]
+    },
+    {
+      "name": "cemetery",
+      "file": "panoramas/cemetery.png",
+      "size": [
+        2172,
+        175
+      ]
+    },
+    {
+      "name": "crypt",
+      "file": "panoramas/crypt.png",
+      "size": [
+        2172,
+        175
+      ]
+    },
+    {
+      "name": "catacombs",
+      "file": "panoramas/catacombs.png",
+      "size": [
+        2172,
+        177
+      ]
+    }
+  ],
+  "validation": {
+    "counts": {
+      "texture_native": 64,
+      "texture_128": 64,
+      "props": 80,
+      "pickups": 20,
+      "animation_frames": 60,
+      "panoramas": 4
+    },
+    "rgba_files_checked": 160,
+    "status": "passed"
+  }
+}
