@@ -120,7 +120,7 @@ export class SectorRenderer {
       // Draw scrolling sky
       const panoW = panoData.width;
       const panoH = panoData.height;
-      const angleRatio = (((-playerAngle) % (Math.PI * 2)) + Math.PI * 2) % (Math.PI * 2);
+      const angleRatio = ((playerAngle % (Math.PI * 2)) + Math.PI * 2) % (Math.PI * 2);
       const skyOffset = Math.floor((angleRatio / (Math.PI * 2)) * panoW);
 
       for (let x = 0; x < w; x++) {
@@ -237,6 +237,7 @@ export class SectorRenderer {
         const mainTex = this.getTexturePixels(area, edge.texture);
         const upperTex = this.getTexturePixels(area, edge.upperTexture || edge.texture);
         const lowerTex = this.getTexturePixels(area, edge.lowerTexture || edge.texture);
+        const floorTex = this.getTexturePixels(area, sector.floorTexture);
 
         // If door exists and is closed/closing, it acts as a portal with moving ceiling/vertical barrier
         const doorProgress = door ? door.progress : 1.0;
@@ -255,7 +256,8 @@ export class SectorRenderer {
           const z = 1 / invZ;
 
           // Fisheye correction factor for this column
-          const correctedZ = z * this.cosAngles[col];
+          const cosBeam = this.cosAngles[col];
+          const correctedZ = z * cosBeam;
 
           // Projected heights on screen
           const projScale = fovScale / correctedZ;
@@ -290,9 +292,38 @@ export class SectorRenderer {
                 }
               }
               this.zBuffer[col] = Math.min(this.zBuffer[col], z);
-              // Wall occludes column completely
-              this.clipTop[col] = drawBottom + 1;
             }
+
+            // Render Floor for this sector from below wall (drawBottom + 1) down to clipBottom[col]
+            const floorStart = Math.max(drawBottom + 1, Math.floor(halfH) + 1, this.clipTop[col]);
+            const floorEnd = this.clipBottom[col];
+            if (floorStart <= floorEnd && floorTex) {
+              const tanBeam = this.tanAngles[col];
+              // Ray direction in world space for this column
+              const rayDirX = cosA * tanBeam - sinA;
+              const rayDirY = sinA * tanBeam + cosA;
+              const eyeH = camZ - floorH;
+
+              for (let y = floorStart; y <= floorEnd; y++) {
+                const dy = y - halfH;
+                if (dy <= 0) continue;
+                const dist = (eyeH * fovScale) / dy;
+                const fx = player.x + rayDirX * dist;
+                const fy = player.y + rayDirY * dist;
+
+                let u = Math.floor(fx * 64) % floorTex.width;
+                let v = Math.floor(fy * 64) % floorTex.height;
+                if (u < 0) u += floorTex.width;
+                if (v < 0) v += floorTex.height;
+
+                const fltLight = Math.max(0.18, Math.min(1.0, (sector.light || 0.8) - (dist / CONFIG.MAX_RENDER_DISTANCE) * 0.75));
+                const colr = floorTex.pixels[v * floorTex.width + u];
+                this.pixels[y * w + col] = this._shade(colr, fltLight);
+              }
+            }
+
+            // Wall and floor in this sector completely occlude this column
+            this.clipTop[col] = h;
           } else {
             // PORTAL with lower/upper step walls and pass-through window
             const nFloorH = neighborSector.floorHeight;
@@ -331,6 +362,33 @@ export class SectorRenderer {
                   if (texV < 0) texV += lowerTex.height;
                   this.pixels[y * w + col] = this._shade(lowerTex.pixels[texV * lowerTex.width + texU], lightMult);
                 }
+              }
+            }
+
+            // Render Floor of current sector between current floor line and neighbor floor line (or bottom clip)
+            const pFloorStart = Math.max(yFloor + 1, Math.floor(halfH) + 1, this.clipTop[col]);
+            const pFloorEnd = this.clipBottom[col];
+            if (pFloorStart <= pFloorEnd && floorTex) {
+              const tanBeam = this.tanAngles[col];
+              const rayDirX = cosA * tanBeam - sinA;
+              const rayDirY = sinA * tanBeam + cosA;
+              const eyeH = camZ - floorH;
+
+              for (let y = pFloorStart; y <= pFloorEnd; y++) {
+                const dy = y - halfH;
+                if (dy <= 0) continue;
+                const dist = (eyeH * fovScale) / dy;
+                const fx = player.x + rayDirX * dist;
+                const fy = player.y + rayDirY * dist;
+
+                let u = Math.floor(fx * 64) % floorTex.width;
+                let v = Math.floor(fy * 64) % floorTex.height;
+                if (u < 0) u += floorTex.width;
+                if (v < 0) v += floorTex.height;
+
+                const fltLight = Math.max(0.18, Math.min(1.0, (sector.light || 0.8) - (dist / CONFIG.MAX_RENDER_DISTANCE) * 0.75));
+                const colr = floorTex.pixels[v * floorTex.width + u];
+                this.pixels[y * w + col] = this._shade(colr, fltLight);
               }
             }
 

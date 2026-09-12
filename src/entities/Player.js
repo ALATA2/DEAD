@@ -160,16 +160,16 @@ export class Player {
       this.switchWeapon(next);
     }
 
-    // Rotation from mouse & keyboard (Standard FPS: moving mouse right rotates view right)
+    // Rotation from mouse & keyboard (Standard FPS: moving mouse right rotates view clockwise)
     const turnSpeed = 2.4;
-    if (input.isTurnLeft()) this.angle += turnSpeed * dt;
-    if (input.isTurnRight()) this.angle -= turnSpeed * dt;
+    if (input.isTurnLeft()) this.angle -= turnSpeed * dt;
+    if (input.isTurnRight()) this.angle += turnSpeed * dt;
 
     if (input.mouseDeltaX !== 0) {
-      this.angle -= input.mouseDeltaX * CONFIG.MOUSE_SENSITIVITY;
+      this.angle += input.mouseDeltaX * CONFIG.MOUSE_SENSITIVITY;
     }
     if (input.touchLookDeltaX !== 0) {
-      this.angle -= input.touchLookDeltaX * 0.004;
+      this.angle += input.touchLookDeltaX * 0.004;
     }
 
     // Movement direction
