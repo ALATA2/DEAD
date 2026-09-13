@@ -1,6 +1,7 @@
 // main.js - Master Game Controller & Entry Point for DEAD : THE HALLOWEEN MASSACRE
 
 import { CONFIG } from './config.js';
+import { APP_VERSION } from './version.js';
 import { AssetRegistry } from './assets/AssetRegistry.js';
 import { AudioManager, sound } from './engine/AudioManager.js';
 import { Input } from './engine/Input.js';
@@ -35,11 +36,15 @@ class Game {
   async init() {
     const loadingBar = document.getElementById('loadingProgress');
     const loadingText = document.getElementById('loadingText');
+    const versionElem = document.getElementById('appVersion');
+    if (versionElem) {
+      versionElem.textContent = APP_VERSION;
+    }
 
     await this.assets.init((progress, key) => {
       const pct = Math.floor(progress * 100);
       if (loadingBar) loadingBar.style.width = `${pct}%`;
-      if (loadingText) loadingText.textContent = `Caricamento risorsa: ${key} (${pct}%)`;
+      if (loadingText) loadingText.textContent = `Loading asset: ${key} (${pct}%)`;
     });
 
     document.getElementById('loadingScreen').style.display = 'none';
@@ -61,7 +66,7 @@ class Game {
 
     document.getElementById('btnLevelSelect').addEventListener('click', () => {
       const save = SaveSystem.load();
-      const choice = prompt(`Seleziona livello (1: Bosco, 2: Cimitero, 3: Cripta, 4: Catacombe):`, "1");
+      const choice = prompt(`Select Level (1: Dead Moon Forest, 2: Rotten Cemetery, 3: Ancient Crypt, 4: Catacombs of Doom):`, "1");
       const idx = parseInt(choice, 10) - 1;
       if (!isNaN(idx) && idx >= 0 && idx < 4) {
         sound.ensureContext();
@@ -202,11 +207,11 @@ class Game {
       ctx.fillStyle = '#e6a13b';
       ctx.font = 'bold 16px "Courier New", monospace';
       ctx.textAlign = 'center';
-      ctx.fillText('LIVELLO COMPLETATO!', this.canvas.width / 2, 60);
+      ctx.fillText('LEVEL COMPLETED!', this.canvas.width / 2, 60);
       ctx.fillStyle = '#e0e0e0';
       ctx.font = '12px "Courier New", monospace';
-      ctx.fillText(`Tempo: ${Math.floor(this.campaign.levelTime)}s`, this.canvas.width / 2, 100);
-      ctx.fillText('Premi [SPAZIO] o [E] per il prossimo livello', this.canvas.width / 2, 150);
+      ctx.fillText(`Time: ${Math.floor(this.campaign.levelTime)}s`, this.canvas.width / 2, 100);
+      ctx.fillText('Press [SPACE] or [E] for next level', this.canvas.width / 2, 150);
 
       if (this.input.keys['Space'] || this.input.keys['KeyE']) {
         this.campaign.nextLevel();
@@ -220,12 +225,12 @@ class Game {
       ctx.fillStyle = '#220011';
       ctx.font = 'bold 18px "Courier New", monospace';
       ctx.textAlign = 'center';
-      ctx.fillText('L’ALBA FINALE È GIUNTA!', this.canvas.width / 2, 50);
+      ctx.fillText('THE FINAL DAWN HAS ARRIVED!', this.canvas.width / 2, 50);
       ctx.font = '12px "Courier New", monospace';
-      ctx.fillText('Clock Reaper è stato distrutto.', this.canvas.width / 2, 85);
-      ctx.fillText('Il massacro di Halloween è terminato.', this.canvas.width / 2, 110);
+      ctx.fillText('Clock Reaper has been defeated.', this.canvas.width / 2, 85);
+      ctx.fillText('The Halloween Massacre has ended.', this.canvas.width / 2, 110);
       ctx.fillText('DEAD : THE HALLOWEEN MASSACRE', this.canvas.width / 2, 145);
-      ctx.fillText('Hai trionfato!', this.canvas.width / 2, 175);
+      ctx.fillText('You Survived!', this.canvas.width / 2, 175);
 
     } else if (this.gameState === 'game_over') {
       ctx.fillStyle = '#1e0000';
@@ -233,10 +238,10 @@ class Game {
       ctx.fillStyle = '#ff2222';
       ctx.font = 'bold 20px "Courier New", monospace';
       ctx.textAlign = 'center';
-      ctx.fillText('SEI MORTO', this.canvas.width / 2, 80);
+      ctx.fillText('YOU DIED', this.canvas.width / 2, 80);
       ctx.fillStyle = '#ffffff';
       ctx.font = '12px "Courier New", monospace';
-      ctx.fillText('Premi [SPAZIO] o [E] per riprovare', this.canvas.width / 2, 130);
+      ctx.fillText('Press [SPACE] or [E] to retry', this.canvas.width / 2, 130);
 
       if (this.input.keys['Space'] || this.input.keys['KeyE']) {
         this.campaign.startLevel(this.campaign.currentLevelIndex);

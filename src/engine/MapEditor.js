@@ -46,12 +46,12 @@ export class MapEditor {
       <div id="editorTopBar" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 16px; background: #1f1124; border-bottom: 2px solid #ff5500;">
         <div>
           <span style="font-weight: bold; font-size: 16px; color: #ff5500;">MAP INSPECTOR & EDITOR</span>
-          <span id="editorMapTitle" style="margin-left: 15px; color: #aaa;">Livello</span>
+          <span id="editorMapTitle" style="margin-left: 15px; color: #aaa;">Level</span>
         </div>
         <div style="display: flex; gap: 8px;">
-          <button id="btnExportMap" style="background: #2a1420; color: #ffaa44; border: 1px solid #ff5500; padding: 4px 12px; cursor: pointer; font-family: inherit; font-weight: bold;">ESPORTA JSON</button>
-          <button id="btnCopyMap" style="background: #2a1420; color: #ffaa44; border: 1px solid #ff5500; padding: 4px 12px; cursor: pointer; font-family: inherit; font-weight: bold;">COPIA DATI</button>
-          <button id="btnCloseEditor" style="background: #551111; color: #fff; border: 1px solid #ff4444; padding: 4px 12px; cursor: pointer; font-family: inherit; font-weight: bold;">TORNA AL GIOCO [TAB / M]</button>
+          <button id="btnExportMap" style="background: #2a1420; color: #ffaa44; border: 1px solid #ff5500; padding: 4px 12px; cursor: pointer; font-family: inherit; font-weight: bold;">EXPORT JSON</button>
+          <button id="btnCopyMap" style="background: #2a1420; color: #ffaa44; border: 1px solid #ff5500; padding: 4px 12px; cursor: pointer; font-family: inherit; font-weight: bold;">COPY DATA</button>
+          <button id="btnCloseEditor" style="background: #551111; color: #fff; border: 1px solid #ff4444; padding: 4px 12px; cursor: pointer; font-family: inherit; font-weight: bold;">RETURN TO GAME [TAB / M]</button>
         </div>
       </div>
       
@@ -60,15 +60,15 @@ export class MapEditor {
         <div style="position: relative; flex: 1; height: 100%; overflow: hidden; background: #0b070f;">
           <canvas id="editorCanvas" style="width: 100%; height: 100%; cursor: crosshair; display: block;"></canvas>
           <div style="position: absolute; bottom: 10px; left: 10px; color: #888; font-size: 11px; background: rgba(0,0,0,0.7); padding: 6px; border: 1px solid #333;">
-            Tasto SX: Trascina Vista / Seleziona &bull; Shift + Trascina: Sposta Elementi &bull; Rotellina: Zoom &bull; TAB / M: Chiudi
+            Left Click: Pan View / Select &bull; Shift + Drag: Move Elements &bull; Wheel: Zoom &bull; TAB / M: Close
           </div>
         </div>
 
         <!-- Properties Panel Sidebar -->
         <div id="editorSidebar" style="width: 320px; background: #160c1c; border-left: 2px solid #ff5500; padding: 14px; overflow-y: auto; font-size: 12px;">
-          <h3 style="color: #ff5500; border-bottom: 1px solid #3d1c2b; padding-bottom: 4px; margin-bottom: 12px;">PROPRIETÀ SELEZIONE</h3>
+          <h3 style="color: #ff5500; border-bottom: 1px solid #3d1c2b; padding-bottom: 4px; margin-bottom: 12px;">SELECTION PROPERTIES</h3>
           <div id="editorPropsContent">
-            <p style="color: #777;">Clicca su un settore, vertice, porta o nemico per visualizzarne e modificarne le quote e i parametri.</p>
+            <p style="color: #777;">Click on a sector, vertex, door or enemy to view and edit its parameters.</p>
           </div>
         </div>
       </div>

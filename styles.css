@@ -1,4 +1,4 @@
-﻿/* styles.css - Amiga 1200 AGA Retro Aesthetic & Pixelated Crisp Rendering */
+/* styles.css - Amiga 1200 AGA Retro Aesthetic & Pixelated Crisp Rendering */
 
 * {
   box-sizing: border-box;
@@ -156,6 +156,23 @@ canvas#gameCanvas {
   color: #8c7b6c;
   max-width: 500px;
   line-height: 1.5;
+}
+
+/* Version Tag (Bottom-Left of Home Screen) */
+.version-tag {
+  position: absolute;
+  bottom: 16px;
+  left: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffaa44;
+  background: rgba(22, 10, 26, 0.85);
+  border: 1px solid #5a301a;
+  padding: 4px 10px;
+  letter-spacing: 1px;
+  box-shadow: 2px 2px 0 #000;
+  pointer-events: none;
 }
 
 /* Mobile Controls */
