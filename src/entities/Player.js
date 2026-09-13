@@ -162,14 +162,14 @@ export class Player {
 
     // Rotation from mouse & keyboard (Standard FPS: moving mouse right rotates view clockwise)
     const turnSpeed = 2.4;
-    if (input.isTurnLeft()) this.angle -= turnSpeed * dt;
-    if (input.isTurnRight()) this.angle += turnSpeed * dt;
+    if (input.isTurnLeft()) this.angle += turnSpeed * dt;
+    if (input.isTurnRight()) this.angle -= turnSpeed * dt;
 
     if (input.mouseDeltaX !== 0) {
-      this.angle += input.mouseDeltaX * CONFIG.MOUSE_SENSITIVITY;
+      this.angle -= input.mouseDeltaX * CONFIG.MOUSE_SENSITIVITY;
     }
     if (input.touchLookDeltaX !== 0) {
-      this.angle += input.touchLookDeltaX * 0.004;
+      this.angle -= input.touchLookDeltaX * 0.004;
     }
 
     // Movement direction
@@ -181,13 +181,15 @@ export class Player {
     const strafeL = input.isStrafeLeft();
     const strafeR = input.isStrafeRight();
 
-    // Camera forward vector from SectorRenderer:
-    // When angle = 0, camera faces +Y (dx=0, dy=+1 => tz = +1)
-    // Camera right vector: dx = +1, dy = 0 => tx = +1
+    // Camera forward vector:
+    // With view transform tx = dx * cosA - dy * sinA, tz = dx * sinA + dy * cosA
+    // Forward direction:
     const forwardX = -Math.sin(this.angle);
     const forwardY = Math.cos(this.angle);
-    const rightX = Math.cos(this.angle);
-    const rightY = Math.sin(this.angle);
+    // Right strafe direction (perpendicular to forward, 90 deg clockwise):
+    // If forward is (-sin A, cos A), then left is (-cos A, -sin A) and right is (cos A, sin A)
+    const rightX = -Math.cos(this.angle);
+    const rightY = -Math.sin(this.angle);
 
     if (forward) {
       moveX += forwardX;
